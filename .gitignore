@@ -26,6 +26,7 @@
 config.rb
 /config.inc.php
 /usr/*.db
+/usr/uploads/
 /usr/plugins/
 !/usr/plugins/HelloWorld
 /usr/themes/
