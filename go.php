@@ -4,7 +4,12 @@ $t_url = preg_replace('/^url=(.*)$/i','$1',$_SERVER["QUERY_STRING"]);
 if(!empty($t_url)) {
 	preg_match('/(http|https):\/\//',$t_url,$matches);
 	if($matches){
-		$url=$t_url;
+		preg_match('/(http|https):\/\//s3.amazonaws.com',$t_url,$matches);
+		if($matches){
+			$url="http://www.oliver.ren/";
+		} else {
+			$url=$t_url;
+		}
 		$title='页面加载中,请稍候...';
 	} else {
 		$title='加载中...';
