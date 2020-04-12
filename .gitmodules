@@ -1,0 +1,3 @@
+[submodule "usr/themes/Bytecats2"]
+	path = usr/themes/Bytecats2
+	url = git@github.com:oliver-csu/Bytecats2.git
